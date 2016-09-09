@@ -42,8 +42,6 @@ public class ScanPackageUtils {
 	private static void getControllerClassList(List<String> classNameList, List<Class> controllerClassList, Class annotationClass){
 		try{
 			for (String className : classNameList) {
-				//Class.forName()会初始化该类，而ClassLoader.loadClass()是更底层的操作，不会初始化
-				//ZAnnotation annotation = Class.forName(className).getAnnotation(ZAnnotation.class);
 				Class clazz = Thread.currentThread().getContextClassLoader().loadClass(className);
 				Object annotation = clazz.getAnnotation(annotationClass);
 				if(annotation != null){

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mvc-config>
-	<route path="hello" controllerPath="edu.nust.mvc.test.HelloController" method="helloexecute" />
-	<route path="test" controllerPath="edu.nust.mvc.test.HelloController" method="testexecute" />
-	<route path="test2" controllerPath="edu.nust.mvc.test.TestController" method="testexecute" />
-	<page viewName="index" controllerPath="edu.nust.mvc.test.HelloController" resultView="/index.jsp"/>
-	<page viewName="index" controllerPath="edu.nust.mvc.test.TestController" resultView="/test.jsp"/>
-</mvc-config>

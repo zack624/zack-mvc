@@ -8,6 +8,7 @@ import java.util.Map;
  * @since  2016年8月29日
  * @version 1.0.0
  */
+@Deprecated
 public class ZControllerFactory {
 	private static Map<String,Object> controllerMap = new HashMap<String, Object>();
 	/**

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mvc-config>
-	<component-scan base-package="edu.nust.mvc.test"/>
-	<bean>
-		<property name="prefix" value="/WEB-INF/"></property>
-		<property name="suffix" value=".jsp"></property>
-	</bean>
-</mvc-config>

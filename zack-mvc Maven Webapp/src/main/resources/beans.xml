@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	
+	<bean id="controller" class="edu.nust.test.RegisterController" autowire="byName">
+<!-- 		<property name="service"> -->
+<!-- 			<ref>service</ref> -->
+<!-- 		</property> -->
+	</bean>
+	
+	<bean id="service" class="edu.nust.test.RegisterService">
+		<property name="dao">
+			<ref>dao</ref>
+		</property>
+	</bean>
+	
+	<bean id="dao" class="edu.nust.test.UserDao"></bean>
+</beans>
